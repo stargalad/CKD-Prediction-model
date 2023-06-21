@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/fontawesome-all.css" rel="stylesheet">
+    <link href="static/css/swiper.css" rel="stylesheet">
+	<link href="static/css/magnific-popup.css" rel="stylesheet">
+	<link href="static/css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="static/images/favicon.png">
+</head>
+
+<bodydata-spy="scroll" data-target=".fixed-top">
+    
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="container">
+          <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav ml-auto">
+                 
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="/login">Signout</a>
+                  </li>
+                  
+              </ul>
+          </div> <!-- end of navbar-collapse -->
+      </div> <!-- end of container -->
+  </nav> <!-- end of navbar -->
+  <!-- end of navigation -->
+
+<!-- Header -->
+<header class="ex-header">
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-10 offset-xl-1">
+              <h1>Chronic Kidney Disease</h1>
+              <br>
+              <h5 class="header col s12 light">Chronic Kidney Disease Prediction </h5>
+          </div> <!-- end of col -->
+         
+      </div> <!-- end of row -->
+  </div> <!-- end of container -->
+</header> <!-- end of ex-header -->
+<!-- end of header -->
+
+<div class="ex-basic-1 pt-4">
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+     <div class="row">
+        <form action='/predict' method="post" class="col s12">
+            
+                <div class="input-field col s4">
+                    <label for="first_name"><b>Age</b></label>
+                    <br>
+                    <input placeholder="Age" name="1" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Blood Pressure</b></label>
+                    <br>
+                    <input id="_name" name="2" placeholder="Blood Pressure Eg - 90" type="text" class="validate">
+    
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Specific Gravity</b></label>
+                    <br>
+                    <input id="_name" name="3" placeholder="Specific Gravity Eg - 1.02" type="text" class="validate">
+    
+                </div>
+                <div class="input-field col s4">
+                    <label for="last_name"><b>Albumin</b></label>
+                    <br>
+                    <input id="last_name" name="4" placeholder="Albumin Eg - 3"  type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                  <label ><b>Sugar</b></label>
+                  <br>
+                  <input name = '5' placeholder="Sugar Eg - 2" type="text" class="validate">
+
+                </div>
+                <div class="input-field col s4">
+                    <label for="last_name"><b>Red Blood Cells</b></label>
+                    <br>
+                    <input id="last_name" name="6" placeholder="Red Blood Cells Eg - 1"  type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Pus Cell</b></label>
+                    <br>
+                    <input id="_name" name="7" placeholder="Pus Cell Eg - 1" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Pus Cell Clumps</b></label>
+                    <br>
+                    <input id="_name" name="8" placeholder="Pus Cell Clumps Eg - 0" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Bacteria</b></label>
+                    <br>
+                    <input id="_name" name="9" placeholder="Bacteria Eg - 1" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Blood Glucose Random</b></label>
+                    <br>
+                    <input id="_name" name="10" placeholder="Blood Glucose Random Eg - 121" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Blood Urea</b></label>
+                    <br>
+                    <input id="_name" name="11" placeholder="Blood Urea Eg - 56" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Serum Creatinine</b></label>
+                    <br>
+                    <input id="_name" name="12" placeholder="Serum Creatinine Eg - 1.2" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Sodium</b></label>
+                    <br>
+                    <input id="_name" name="13" placeholder="Sodium Eg - 140" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Potassium</b></label>
+                    <br>
+                    <input id="_name" name="14" placeholder="Potassium Eg - 3.5" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Haemoglobin</b></label>
+                    <br>
+                    <input id="_name" name="15" placeholder="Haemoglobin Eg - 13.5" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Packed Cell Volume</b></label>
+                    <br>
+                    <input id="_name" name="16" placeholder="Packed Cell Volume Eg - 48" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>White Blood Cell Count</b></label>
+                    <br>
+                    <input id="_name" name="17" placeholder="White Blood Cell Count Eg - 7448" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Red Blood Cell Count</b></label>
+                    <br>
+                    <input id="_name" name="18" placeholder="Red Blood Cell Count Count Eg - 5.2" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Hypertension</b></label>
+                    <br>
+                    <input id="_name" name="19" placeholder="Hypertension Eg - 1 "type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Diabetes Mellitus</b></label>
+                    <br>
+                    <input id="_name" name="20" placeholder="Diabetes Mellitus Eg - 1 "type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Coronary Artery Disease</b></label>
+                    <br>
+                    <input id="_name" name="21" placeholder="Coronary Artery Disease Eg - 0 "type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Appetite</b></label>
+                    <br>
+                    <input id="_name" name="22" placeholder="Appetite Eg - 1" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Peda Edema</b></label>
+                    <br>
+                    <input id="_name" name="23" placeholder="Peda Edema Eg - 1" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Aanemia</b></label>
+                    <br>
+                    <input id="_name" name="24" placeholder="Aanemia Eg - 1" type="text" class="validate">
+                </div>
+
+                
+    
+          </div>
+    
+          <div class="row center">
+    
+              <button style="text-align: center;" type="submit" class="btn-large waves-effect waves-light orange">Submit</button>
+
+          </div>
+        </form>
+  </div>
+</div>
+
+      <br>
+
+     
+    <br><br>
+  </div>
+  </div>>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+         <!-- Copyright -->
+<div class="copyright">
+    <div class="container">
+        
+    </div> <!-- end of container -->
+</div> <!-- end of copyright --> 
+<!-- end of copyright -->
+    </div> <!-- end of container -->
+</div> <!-- end of footer -->  
+<!-- end of footer -->
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="static/js/materialize.js"></script>
+  <script src="static/js/init.js"></script>
+
+  <!-- Scripts -->
+  <script src="static/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+  <script src="static/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+  <script src="static/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+  <script src="static/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+  <script src="static/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+  <script src="static/js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
